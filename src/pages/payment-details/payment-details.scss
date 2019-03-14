@@ -1,0 +1,62 @@
+page-payment-details {
+    ion-content{
+        .header{
+            margin-top:10px;
+            p{
+                font-size:medium;
+            }
+            ion-label{
+                text-align: right;
+                font-size:120%;
+                font-weight: bold;
+            }
+        }
+        ion-segment{
+            margin-top:20px;
+            ion-segment-button{
+                height:40px !important;
+                display:flex !important;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                ion-icon{
+                    margin-right:5px;
+                }
+            }
+        }
+        .card{
+            margin-top:20px;
+            p{
+                font-size:100% !important;
+                color:black !important;
+                font-weight: bold;
+            }
+            button{
+                background-color:transparent;
+                color:black;
+            }
+        }
+        .button-row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:40px;
+            .btn{
+                padding:25px;
+                width:70%;
+            }
+        }
+        .footer{
+            font-size:90%;
+            color:#636363;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            margin-top:20px;
+            span{
+                margin-left:5px;
+                color:$blue-custom;
+            }
+        }
+    }
+}

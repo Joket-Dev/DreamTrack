@@ -1,0 +1,90 @@
+{
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device@^1.1.6"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-splashscreen@^4.0.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@^2.2.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@^1.3.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "ionic-plugin-keyboard": {
+    "source": {
+      "type": "registry",
+      "id": "ionic-plugin-keyboard@^2.2.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4@^1.9.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "158736311382510",
+      "APP_NAME": "DreamTrack"
+    }
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_ANDROID": "AIzaSyC5Xc85aXhKohOmc0TK7PylBUf0QcrfdeQ",
+      "API_KEY_FOR_IOS": "AIzaSyAFO84Ub-WVCpxhlbv4Qd8gCP29PM0-7Pw"
+    }
+  },
+  "cordova-plugin-screensize": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-screensize"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation"
+    },
+    "is_top_level": true,
+    "variables": {
+      "GEOLOCATION_USAGE_DESCRIPTION": "geolocation"
+    }
+  },
+  "cordova-plugin-compat": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-compat@^1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  }
+}

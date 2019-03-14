@@ -1,0 +1,30 @@
+page-tip-connect {
+    ion-content{
+        background-color:#f8f8f8 !important;
+        ion-list{
+            background-color:white;
+            ion-item{
+                padding:10px !important;
+                border-top:1px solid #f8f8f8 !important;
+            }
+            .header{
+                background-color:#f8f8f8;
+            }
+            .icon{
+                width:27px;
+                height: 27px;
+                
+            }
+            .title{
+                font-weight: bold;
+            }
+            .description{
+                color:#cccccc;
+                font-size:70%;
+            }
+        }
+        .item-ios [item-end]{
+            margin:0 !important;
+        }
+    }
+}

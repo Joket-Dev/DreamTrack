@@ -1,0 +1,114 @@
+<!--
+  Generated template for the FilterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="goToPreviousPage()" ><ion-icon name="ios-arrow-back"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Filters</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content scrollbar-y="true">
+  <ion-grid>
+    <ion-row class="title-row">
+      <ion-col col-12>
+      I am travelling with
+    </ion-col>
+    </ion-row>
+    <ion-row class="travel-mode">
+      <ion-col col-4 (click)="changeMode(1)">
+        <div *ngIf="travelMode!=1">
+          <div class="travel-mode-img">
+            <img src="assets/img/filter/family.png" />
+          </div>
+          <div class="travel-mode-text">
+            Family
+          </div>
+        </div>
+        <div *ngIf="travelMode==1" class="active">
+            <div class="travel-mode-img">
+              <img src="assets/img/filter/family_active.png" />
+            </div>
+            <div class="travel-mode-text">
+              Family
+            </div>
+        </div>
+      </ion-col>
+      <ion-col col-4 (click)="changeMode(2)">
+        <div *ngIf="travelMode!=2">
+          <div class="travel-mode-img">
+            <img src="assets/img/filter/couple.png" />
+          </div>
+          <div class="travel-mode-text">
+            Couple
+          </div>
+        </div>
+        <div *ngIf="travelMode==2" class="active">
+            <div class="travel-mode-img">
+              <img src="assets/img/filter/couple_active.png" />
+            </div>
+            <div class="travel-mode-text">
+              Couple
+            </div>
+        </div>
+      </ion-col>
+      <ion-col col-4 (click)="changeMode(3)" class="last">
+        <div *ngIf="travelMode!=3">
+          <div class="travel-mode-img">
+            <img src="assets/img/filter/alone.png" />
+          </div>
+          <div class="travel-mode-text">
+            Alone
+          </div>
+        </div>
+        <div *ngIf="travelMode==3" class="active">
+            <div class="travel-mode-img">
+              <img src="assets/img/filter/alone_active.png" />
+            </div>
+            <div class="travel-mode-text">
+              Alone
+            </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="title-row">
+      <ion-col col-12>
+      How many people?
+    </ion-col>
+    </ion-row>
+    <ion-row class="days-row">
+      <ion-segment [(ngModel)]="travelDays" color="primary" (ionChange)="segmentChanged($event)">
+        <ion-segment-button class="segment-button" *ngFor="let day of days" value="{{day.string}}">
+          <button ion-button >{{day?.string}}</button>
+        </ion-segment-button >
+      </ion-segment>
+    </ion-row>
+     <ion-row class="title-row">
+       <ion-col col-12>Age range</ion-col>
+      
+    </ion-row>
+    <ion-row class="budget-range">
+        
+            <ion-item no-lines>
+              <ion-range dualKnobs="true" pin="true" [(ngModel)]="ages" (ionChange)="onChange($event)" color="primary" min="1" max="60">
+                <ion-label range-left>1 yo</ion-label>
+                <ion-label range-right>60 yo</ion-label>
+              </ion-range>
+            </ion-item>
+    </ion-row>
+    
+    <ion-row class="button-row">
+      <button ion-button full round class="inspire-btn orange-btn" (click)="goToMap()">Filter<ion-icon name="md-checkmark"></ion-icon></button>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+

@@ -1,0 +1,91 @@
+page-business-profile {
+    ion-slides{
+        height:33%;
+    }
+    .content{
+        padding:10px 20px;
+        p{
+            color:$gray1;
+            font-size:small;
+        }
+        .phone-number{
+            color:$blue-custom;
+            display:flex;
+            align-items:center;
+            ion-icon{
+                margin-right:10px;
+            }
+        }
+        .address{
+            color:black;
+            display:flex;
+            align-items:center;
+            margin-bottom:20px;
+            ion-icon{
+                margin-right:10px;
+            }
+        }
+        .line{
+            height:1px;
+            background-color:$gray2;
+            width:100%;
+        }
+        .price{
+            p{
+                color:black;
+                font-size:medium;
+            }
+            ion-label{
+                color:$orange-custom;
+                font-size:large;
+            }
+        }
+        .capacity{
+            padding-left:20px;
+            p{
+                color:black;
+                font-size:medium;
+            }
+            ion-label{
+                img{
+                    width:18px;
+                    height:18px;
+                }
+                color:black;
+                font-weight: bold;
+                font-size:18px;
+            }
+        }
+        .family{
+            display:flex;
+            align-items: center;
+            justify-content: flex-end;
+            img{
+                width:16px;
+                height:16px;
+                margin-right:6px;
+            }
+            font-weight: bold;
+            color:black;
+        }
+        .spend{
+            padding:20px 0;
+            ion-icon{
+                margin-right:5px;
+            }
+        }
+        .btn-row{
+            margin:20px 0;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .btn{
+                padding:20px 10px !important;
+                width:70%;
+            }
+        }
+    }
+    .gray{
+        color:$gray1 !important;
+    }
+}

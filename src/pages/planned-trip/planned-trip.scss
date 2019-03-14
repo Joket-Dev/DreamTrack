@@ -1,0 +1,96 @@
+page-planned-trip {
+    ion-content{
+        ion-grid{
+            padding:0 !important;
+            .header{
+                padding-top:20px;
+                padding-bottom: 20px;
+                padding-left:10px;
+                padding-right:10px;
+                .title{
+                    padding-left:20px !important;
+                    color:#ed8730;
+                    font-size:150%;
+                    padding-top:10px !important;
+
+                }
+                .details{
+                    padding-top:5px !important;
+                    .details-btn{
+                        span{
+                        padding:0;
+                        }
+                        
+                        height:30px;
+                        border: 1px solid #3296fe;
+                        color:#3296fe;
+                        float:right;
+                        background-color:white;
+                    }
+                }
+            }
+            .info{
+                padding-top:10px;
+                padding-bottom: 10px;
+                padding-left:10px;
+                padding-right:10px;
+                ion-col{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: left;
+                    img{
+                        width:20px;
+                        height:20px;
+                    }
+                    ion-label{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .btn-row{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top:30px;
+                margin-bottom: 30px;
+                .btn{
+                    width:60%;
+                    height:60px;
+                }
+            }
+            .item{
+                height:60px;
+                background-color:#3296fe;
+                margin-top:5px;
+                padding-left:20px;
+                padding-right:10px;
+                color:white;
+
+                .left{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: center;
+                    height:100%;
+                    p{
+                        font-size:130%;
+                    }
+                   
+                }
+                .right{
+                    display:flex;
+                    flex-direction: column;
+                    align-items:flex-end;
+                    justify-content: center;
+                    height:100%;
+                    ion-icon{
+                        font-size:180%;
+                        margin-right:10px !important;
+                    }
+                }
+            }
+        }
+    }
+}

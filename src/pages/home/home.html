@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dream Trip</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid *ngIf="business==false">
+    <ion-row>
+      <ion-col col-6>
+        <div class="item" (click)="goToPlan()">
+          <img src="assets/img/explorer.png" class="icon" />
+          <p>Explorer</p>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="item" (click)="goToPlanned()">
+          <img src="assets/img/plan.png" class="icon" />
+          <p>Planned trips</p>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="item">
+          <img src="assets/img/dream.png" class="icon" (click)="goToDream()"/>
+          <p>My Dream trips</p>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="item">
+          <img src="assets/img/connect.png" class="icon" (click)="goToConnect()" />
+          <p>Trip connect</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngIf="business==true">
+     <ion-row class="business-row">
+       <button ion-button round (click)="goToUpcomingCustomers()">Upcoming Customers</button>
+     </ion-row>
+     <ion-row class="business-row">
+       <button ion-button round (click)="goToPlus()">Business Plus</button>
+     </ion-row>
+  </ion-grid>
+</ion-content>

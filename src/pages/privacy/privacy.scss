@@ -1,0 +1,23 @@
+page-privacy {
+    ion-content{
+        .image-item{
+            display:flex;
+            flex-direction: column;
+            padding-top:20px;
+            padding-bottom: 20px;
+            ion-label{
+                width:100px ;
+                img{
+                    width:100px;
+                    height:100px;
+                }
+            }
+        }
+        h5{
+            margin-left:10px;
+        }
+        ion-item{
+            padding:15px !important;
+        }
+    }
+}

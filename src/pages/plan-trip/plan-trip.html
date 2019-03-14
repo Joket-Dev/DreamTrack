@@ -1,0 +1,180 @@
+<!--
+  Generated template for the PlanTripPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton>
+    <ion-buttons left >
+        <button ion-button icon-only (click)="goToPreviousPage()" ><ion-icon name="ios-arrow-back"></ion-icon></button>
+      </ion-buttons>
+    <ion-title>PlanTripPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content scrollbar-y="true">
+  <ion-grid>
+    <ion-row class="title-row">
+      <ion-col col-12>
+      My Dream trip is about
+      </ion-col>
+    </ion-row>
+    <ion-row class="about">
+      <ion-col class="square-box" (click)="changeType(1)">
+        <div class="square-content selected" *ngIf="travelType==1">
+          <div class="col-header">
+            <img src="assets/img/plan/checked.png" class="checked-img" />
+          </div>
+          <div class="col-image">
+            <img src="assets/img/plan/learn_white.png" class="content-img" />
+          </div>
+          <div class="col-text">Learn</div>
+        </div>
+        <div class="square-content default" *ngIf="travelType!=1" >
+            <div class="col-header">
+              <img src="assets/img/plan/unchecked.png" class="checked-img" />
+            </div>
+            <div class="col-image">
+              <img src="assets/img/plan/learn1.png" class="content-img" />
+            </div>
+            <div class="col-text">Learn</div>
+          </div>
+      </ion-col>
+      <ion-col class="square-box" (click)="changeType(2)">
+        <div class="square-content selected" *ngIf="travelType == 2">
+          <div class="col-header">
+            <img src="assets/img/plan/checked.png" class="checked-img" />
+          </div>
+          <div class="col-image">
+            <img src="assets/img/plan/play_white.png" class="content-img" />
+          </div>
+          <div class="col-text">Play</div>
+        </div>
+        <div class="square-content default" *ngIf="travelType != 2">
+            <div class="col-header">
+              <img src="assets/img/plan/unchecked.png" class="checked-img" />
+            </div>
+            <div class="col-image">
+              <img src="assets/img/plan/play1.png" class="content-img" />
+            </div>
+            <div class="col-text">Play</div>
+          </div>
+      </ion-col>
+      <ion-col class="square-box" (click)="changeType(3)">
+          <div class="square-content selected" *ngIf="travelType==3">
+            <div class="col-header">
+              <img src="assets/img/plan/checked.png" class="checked-img" />
+            </div>
+            <div class="col-image">
+              <img src="assets/img/plan/explorer_select.png" class="content-img" />
+            </div>
+            <div class="col-text">Explorer</div>
+          </div>
+          <div class="square-content default" *ngIf="travelType!=3">
+              <div class="col-header">
+                <img src="assets/img/plan/unchecked.png" class="checked-img" />
+              </div>
+              <div class="col-image">
+                <img src="assets/img/plan/explorer1.png" class="content-img" />
+              </div>
+              <div class="col-text">Explorer</div>
+          </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="title-row">
+      <ion-col col-12>
+      Travel mode
+    </ion-col>
+    </ion-row>
+    <ion-row class="travel-mode">
+      <ion-col col-4 (click)="changeMode(1)">
+        <div *ngIf="travelMode!=1">
+          <div class="travel-mode-img">
+            <img src="assets/img/plan/car.png" />
+          </div>
+          <div class="travel-mode-text">
+            Car
+          </div>
+        </div>
+        <div *ngIf="travelMode==1" class="active">
+            <div class="travel-mode-img">
+              <img src="assets/img/plan/car_select.png" />
+            </div>
+            <div class="travel-mode-text">
+              Car
+            </div>
+        </div>
+      </ion-col>
+      <ion-col col-4 (click)="changeMode(2)">
+        <div *ngIf="travelMode!=2">
+          <div class="travel-mode-img">
+            <img src="assets/img/plan/plane.png" />
+          </div>
+          <div class="travel-mode-text">
+            Plane
+          </div>
+        </div>
+        <div *ngIf="travelMode==2" class="active">
+            <div class="travel-mode-img">
+              <img src="assets/img/plan/plane_select.png" />
+            </div>
+            <div class="travel-mode-text">
+              Plane
+            </div>
+        </div>
+      </ion-col>
+      <ion-col col-4 (click)="changeMode(3)" class="last">
+        <div *ngIf="travelMode!=3">
+          <div class="travel-mode-img">
+            <img src="assets/img/plan/train.png" />
+          </div>
+          <div class="travel-mode-text">
+            Train
+          </div>
+        </div>
+        <div *ngIf="travelMode==3" class="active">
+            <div class="travel-mode-img">
+              <img src="assets/img/plan/train_select.png" />
+            </div>
+            <div class="travel-mode-text">
+              Train
+            </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="title-row">
+      <ion-col col-12>
+      How many days is your trip?
+    </ion-col>
+    </ion-row>
+    <ion-row class="days-row">
+      <ion-segment [(ngModel)]="travelDays" color="primary" (ionChange)="segmentChanged($event)">
+        <ion-segment-button class="segment-button" *ngFor="let day of days" value="{{day.string}}">
+          <button ion-button >{{day?.string}}</button>
+        </ion-segment-button >
+      </ion-segment>
+    </ion-row>
+     <ion-row class="title-row">
+       <ion-col col-12>Budget range</ion-col>
+      
+    </ion-row>
+    <ion-row class="budget-range">
+        
+            <ion-item no-lines>
+              <ion-range dualKnobs="true" pin="true" [(ngModel)]="budgets" (ionChange)="onChange($event)" color="primary" min="20" max="1000">
+                <ion-label range-left>$20</ion-label>
+                <ion-label range-right>$1000</ion-label>
+              </ion-range>
+            </ion-item>
+    </ion-row>
+    
+    <ion-row class="button-row">
+      <button ion-button full round class="inspire-btn orange-btn" (click)="goToMap()">Inspire me</button>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

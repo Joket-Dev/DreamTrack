@@ -1,0 +1,115 @@
+page-about-trip {
+    ion-content{
+        background-color:$gray2 !important;
+            .header{
+                padding:0px 20px!important;
+                background-color:transparent;
+            }
+            .detail{
+                position: relative;
+                .image{
+                    img{
+                        width:100%;
+                        height:150px;
+    
+                    }
+                }
+                .name{
+                    padding:0px 20px !important;
+                    p{
+                        margin:5px !important;
+                    }
+                }
+                .hours{
+                    display:flex;
+                    align-items:center;
+                    font-size:small;
+                    ion-icon{
+                        margin-right:5px;
+                    }
+                }
+                ion-item{
+                    min-height:25px !important;
+                }
+            }
+        }
+        
+        ion-thumbnail{
+            img{
+            width:100px !important;
+            height:100px !important;
+            }
+        }
+        .blue-label{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            span{
+            background-color:#3296fe;
+            width:20px !important;
+            height:20px !important;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            color:white;
+            }
+        }
+        h3{
+            font-size:medium !important;
+        }
+        p{
+            color:#7f7f7f;
+            font-size:small !important;
+        }
+        ion-buttons{
+            display:flex;
+            flex-direction: column;
+            
+        }
+        ion-row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding:20px;
+            .btn{
+                width:70% !important;
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+        }
+        .button-check {
+            position: absolute;
+            top:0;
+            right: 8px;
+        }
+        .button-forward {
+            position: absolute;
+            right: 12px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        ion-item{
+            ion-label{
+                margin-top:5px !important;
+                margin-bottom: 5px !important;
+            }
+            padding-right:10px !important;
+        }
+    ion-row{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .btn{
+            width:70%;
+            padding:20px;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+page-register-business {
+    ion-content{
+        background-color:#f8f8f8 !important;
+        .header{
+            color:white;
+            background-color:white;
+            padding:5px 20px;
+            background-color:$blue-custom !important;
+            p{
+                font-size:small;
+                color:white;
+            }
+            ion-label{
+                font-size:large;
+                color:white !important;
+            }
+        }
+        .header-line{
+            background-color:white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                width:57px;
+                height:14px;
+            }
+        }
+        .content-item{
+            background-color:white;
+            ion-col{
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: center;
+                p{
+                    font-size:small;
+                    color:#898989;
+                    margin-bottom:0;
+                }
+                ion-label{
+                    font-size:large;
+                    color:black;
+                    font-weight: bold;
+                }
+                .details-btn{
+                    background-color:transparent; 
+                    border:1px solid #cccccc;
+                    color:#cccccc;
+                    padding: 7px 15px;
+                    border-radius: 5px;
+                }
+                .icon-btn{
+                    background-color:transparent;
+                    border-width: 0px !important;
+                    color:#cccccc;
+                }
+            }
+            .left{
+                align-items:flex-start !important;
+            }
+            border-bottom: 1px solid $gray2;
+            padding-left:10px;
+        }
+        .small{
+            font-size:small;
+            color:$gray2;
+        }
+        .large{
+            font-size:large;
+            color:$gray2;
+        }
+        .active{
+            color:$orange-custom !important;
+        }
+        .btn-row{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            margin-top:40px;
+            .btn{
+                width:70%;
+                padding:25px;
+            }
+        }
+    }
+}

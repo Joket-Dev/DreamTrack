@@ -1,0 +1,56 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-item no-lines class="sidemenu-item">
+        <ion-avatar item-start>
+          <img src="assets/img/default.png" height ="90px" width="90px"/>
+        </ion-avatar>
+        <p>Yaroslav Zinych</p>
+        <button ion-button icon-only item-end class="setting-btn" mode="ios">
+          <ion-icon name="ios-settings"></ion-icon>
+        </button>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-list>
+      
+      
+      <ion-item  no-lines tappable padding-left menuClose class="menu-item" (click)="goToHome()">
+          <img src="assets/img/explorer.png" width="30px" height="30px" />
+          <span> Home</span>
+        </ion-item>
+      <ion-item  no-lines tappable padding-left menuClose class="menu-item" (click)="goToExplorer()" *ngIf="business==false">
+        <img src="assets/img/explorer.png" width="30px" height="30px" />
+        <span> Explorer</span>
+      </ion-item>
+      <ion-item  no-lines tappable padding-left menuClose class="menu-item" (click)="goToPlanned()" *ngIf="business==false">
+        <img src="assets/img/plan.png" width="30px" height="30px" />
+        <span> Planned Trips</span>
+      </ion-item>
+      <ion-item  no-lines tappable padding-left menuClose class="menu-item" (click)="goToDream()" *ngIf="business==false">
+        <img src="assets/img/dream.png" width="30px" height="30px" />
+        <span> Dream Trip</span>
+      </ion-item>
+      <ion-item  no-lines tappable padding-left menuClose class="menu-item" (click)="goToUpcomingCustomers()" *ngIf="business==true">
+        <img src="assets/img/upcoming.jpg" width="30px" height="30px" />
+        <span> Upcoming Customers</span>
+      </ion-item>
+      <ion-item  no-lines tappable padding-left menuClose class="menu-item" (click)="goToBusinessPlus()" *ngIf="business==true">
+        <img src="assets/img/plus.jpg" width="30px" height="30px" />
+        <span> Business Plus</span>
+      </ion-item>
+
+      <ion-item no-lines menuClose ion-item (click)="goToProfile()" class="menu-item">
+          <img src="assets/img/person.png" width="30px" height="30px" /><span>Profile</span>
+        </ion-item>
+      <button ion-button class="orange-btn logout-btn" round full (click)="logout()">SIGN OUT</button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,87 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.orange-btn{
+    background-color: #ed8730 !important;
+    color:white;
+}
+.sidemenu-item{
+    text-align: center;
+    p{
+        font-weight: bold;
+        color:black;
+        font-size:18px;
+    }
+}
+.menu-item{
+    text-align: center;
+    color:#3296fe;
+    padding-top:20px;
+    h6{
+        vertical-align: middle;
+    }
+    ion-label{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            margin-left:10px;
+        }
+        span{
+            margin-left:30px;
+        }
+    }
+    
+}
+.logout-btn{
+    width:60%;
+    margin-top:30px;
+    margin-left:20%;
+}
+.toolbar-background{
+    background-color:white !important;
+}
+.toolbar-title{
+    text-align: center !important;
+    font-size:medium;
+}
+.toolbar-title-ios{
+    text-align: center !important;
+}
+.setting-btn{
+    background-color: transparent !important;
+    ion-icon{
+        color:$gray-title;
+    }
+}
+ion-navbar{
+    ion-buttons{
+        button{
+        color:$gray-title !important;
+        ion-icon{
+            color:$gray-title;
+        }
+    }
+    }
+    .bar-button-menutoggle{
+        span{
+        color:$gray-title !important;
+        }
+    }
+}
+ion-modal{
+    background-color: rgba(0,0,0,0.4) !important;
+}

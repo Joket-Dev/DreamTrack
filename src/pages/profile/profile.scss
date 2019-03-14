@@ -1,0 +1,41 @@
+page-profile {
+    ion-content{
+        .image-item{
+            display:flex;
+            flex-direction: column;
+            padding-top:20px;
+            padding-bottom: 20px;
+            ion-label{
+                width:100px ;
+                img{
+                    width:100px;
+                    height:100px;
+                }
+            }
+        }
+        .profile-item{
+            //margin-top:10px;
+            padding: 5px 5px !important;
+            ion-label{
+                font-weight: bold;
+                color:black !important;
+            }
+            ion-input{
+                color:black;
+            }
+            button{
+                background-color:transparent;
+                color:#878787;
+            }
+        }
+        
+        .btn{
+            width:70%;
+            margin-left:15%;
+            margin-top:30px;
+        }
+        ion-item{
+            padding:10px 0;
+        }
+    }
+}

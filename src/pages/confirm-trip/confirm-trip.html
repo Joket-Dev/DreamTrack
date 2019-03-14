@@ -1,0 +1,187 @@
+<!--
+  Generated template for the EscapeLearnPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+      <ion-navbar hideBackButton>
+          <ion-buttons left>
+              <button ion-button icon-only (click)="goToPreviousPage()" ><ion-icon name="ios-arrow-back"></ion-icon></button>
+            </ion-buttons>
+        <ion-title>Escape & Learn</ion-title>
+        <ion-buttons end>
+          <button ion-button>
+            Edit
+          </button>
+        </ion-buttons>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content>
+      <div padding class="button-days">
+        <button ion-button small round color="orange-custom" class="button-active">
+          Days 1
+        </button>
+        <button ion-button small round color="light" class="button-active">
+          Days 2
+        </button>
+      </div>
+    
+      <ion-item class="trip-start" no-lines padding-left padding-top padding-bottom margin-bottom>
+        <h2 no-margin>Historical Warragamba</h2>
+        <p>Departure: 8:00am</p>
+        <button ion-button icon-only clear item-end>
+          <ion-icon name="ios-arrow-forward" style="color: white;"></ion-icon>
+        </button>
+      </ion-item>
+      <div class="trip-item-first" margin-bottom>
+          <div class="active-div">
+              <div class="item-content" padding-bottom>
+                <p>
+                  <ion-icon name="md-car" ></ion-icon>&nbsp;&nbsp;30 Min&nbsp;&nbsp;&nbsp;&nbsp;
+                  <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Distance : 30km
+                </p>
+              </div>
+          </div>
+      </div>
+      <div class="trip-item" margin-bottom>
+        <div class="active-div">
+          <div class="item-header">
+            <div class="header-left">
+              1
+            </div>
+            <div class="header-right">
+              <h4 no-margin>Warragamba Dam</h4>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+          <div class="item-content" padding-bottom>
+            <p>
+                <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Crest Rd, Warragamba NSW 2752
+            </p>
+            <ion-row>
+              <ion-col col-3>
+                  Arrival:
+              </ion-col>
+              <ion-col col-9>
+                  8:40am&nbsp;&nbsp;&nbsp;&nbsp;Departure: 10:20am
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                Hours:
+              </ion-col>
+              <ion-col col-9>
+                9am - 5pm
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                  Admission:
+              </ion-col>
+              <ion-col col-9>
+                  $3 Adult, $1 Child, $7 Family<br>
+                  43 Edward St, The Oaks, NSW
+              </ion-col>
+            </ion-row>
+            <p>
+              <ion-icon name="ios-time"></ion-icon>&nbsp;&nbsp;People spend about 1.5 hours here
+            </p>
+            <p class="active">
+              <ion-icon name="md-car" ></ion-icon>&nbsp;&nbsp;30 Min&nbsp;&nbsp;&nbsp;&nbsp;
+              <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Distance : 30km
+            </p>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="trip-item" margin-bottom>
+        <div class="inactive-div">
+          <div class="item-header">
+            <div class="header-left">
+              2
+            </div>
+            <div class="header-right">
+              <h4 no-margin>Warragamba Dam</h4>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+          <div class="item-content" padding-bottom>
+            <p>
+                <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Crest Rd, Warragamba NSW 2752
+            </p>
+            <p>
+                Arrival: 8:40am Departure: 10:20am
+            </p>
+            <p>
+                Hours: 9am - 5pm
+            </p>
+            <p>
+              <ion-icon name="ios-time"></ion-icon>&nbsp;&nbsp;People spend about 1.5 hours here</p>
+            <p>
+              <ion-icon name="md-car"></ion-icon>&nbsp;&nbsp;30 Min&nbsp;&nbsp;&nbsp;&nbsp;
+              <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Distance : 30km</p>
+          </div>
+        </div>
+      </div>
+      <div class="trip-item" margin-bottom>
+          <div class="inactive-div">
+            <div class="item-header">
+              <div class="header-left">
+                3
+              </div>
+              <div class="header-right">
+                <h4 no-margin>Warragamba Dam</h4>
+              </div>
+            </div>
+            <div style="clear: both"></div>
+            <div class="item-content" padding-bottom>
+              <p>
+                  <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Crest Rd, Warragamba NSW 2752
+              </p>
+              <p>
+                  Arrival: 8:40am Departure: 10:20am
+              </p>
+              <p>
+                  Hours: 9am - 5pm
+              </p>
+              <p>
+                <ion-icon name="ios-time"></ion-icon>&nbsp;&nbsp;People spend about 3.5 hours here</p>
+              <p>
+                <ion-icon name="md-car"></ion-icon>&nbsp;&nbsp;30 Min&nbsp;&nbsp;&nbsp;&nbsp;
+                <ion-icon name="ios-pin"></ion-icon>&nbsp;&nbsp;Distance : 30km</p>
+            </div>
+          </div>
+        </div>
+        <ion-item class="trip-start" no-lines padding-left padding-top padding-bottom margin-bottom>
+          <ion-icon name="ios-home-outline" large item-start></ion-icon>
+          <h2 no-margin>Back Home</h2>
+          <p>Arrial: 6:00pm</p>
+        </ion-item>
+        <ion-row class="total">
+          <ion-col col-4>
+            <ion-icon item-start name="ios-pin"></ion-icon><span>Distance:</span> 
+          </ion-col>
+          <ion-col col-2>191Km</ion-col>
+          <ion-col col-4>
+              <ion-icon item-start name="ios-time"></ion-icon><span>Est Time:</span>
+            </ion-col>
+          <ion-col col-2>12hrs</ion-col>
+          <ion-col col-4>
+              <ion-icon item-start name="logo-usd"></ion-icon><span>Est Budget:</span>
+            </ion-col>
+            <ion-col col-2>$260</ion-col>
+        </ion-row>
+        <ion-row class="btn-row">
+          <button ion-button full round   class="orange-btn schedule-btn" (click)="scheduleButtonClicked()">Schedule Trip<ion-icon style="position:absolute; right:30px;"name="ios-arrow-forward"></ion-icon></button>
+        </ion-row>
+        <ion-row class="btn-row">
+            <button ion-button full round   class="save-btn"  (click)="saveButtonClicked()"><ion-icon name="heart" ></ion-icon>Save my Trip</button>
+          </ion-row>
+    </ion-content>
+    

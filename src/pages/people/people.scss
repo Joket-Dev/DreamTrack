@@ -1,0 +1,46 @@
+page-people {
+  ion-content{
+    .large{
+      .title-div{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        color:$blue-custom;
+        .large-icon{
+          font-size:150%;
+          color:$blue-custom;
+          margin-right:10px;
+        }
+        .large-btn{
+          float:right;
+        }
+        .large-img{
+          margin-right:10px;
+          width:21px;
+          height:21px;
+        }
+      }
+      
+      .content-div{
+        div{
+          display:flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: left;
+          padding:10px;
+          ion-icon{
+            color:$blue-custom;
+            font-size:150%;
+            margin-left:10px;
+          }
+          button{
+            background-color:transparent;
+            div{
+              background-color:transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

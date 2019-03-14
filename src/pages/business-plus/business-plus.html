@@ -1,0 +1,72 @@
+<!--
+  Generated template for the BusinessPlusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="goToPreviousPage()" ><ion-icon name="ios-arrow-back"></ion-icon></button>
+      </ion-buttons>
+  <ion-title>Busines Plus</ion-title>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row no-lines class="header">
+      <button ion-button class="orange-btn btn" round (click)="buttonClicked()"> Get Business Plus</button>
+    </ion-row>
+    <ion-list>
+        
+        <ion-item no-lines>
+          <div item-left>
+            <img src="assets/img/plus/1.png"  class="icon"/></div>
+          <div item-left>
+            <span class="title">Unlimited Storage</span><br>
+            <span class="description">For Images/Videos</span>
+          </div>
+          <div item-end>
+            <ion-toggle mode="ios"></ion-toggle>
+          </div>
+        </ion-item>
+        <div class="line"></div>
+        <ion-item no-lines>
+            <div item-left>
+              <img src="assets/img/plus/2.png"  class="icon"/></div>
+            <div item-left>
+              <span class="title">Advertising</span><br>
+              <span class="description">Sponsor your Business</span>
+            </div>
+            <div item-end>
+              <ion-toggle mode="ios"></ion-toggle>
+            </div>
+          </ion-item>
+          <div class="line"></div>
+          <ion-item no-lines>
+              <div item-left>
+                <img src="assets/img/plus/3.png"  class="icon"/></div>
+              <div item-left>
+                <span class="title">Booking</span><br>
+                <span class="description">Use booking system for your business</span>
+              </div>
+              <div item-end>
+                <ion-toggle mode="ios"></ion-toggle>
+              </div>
+            </ion-item>
+            <div class="line"></div>
+            <ion-item no-lines>
+                <div item-left>
+                  <img src="assets/img/plus/5.png"  class="icon"/></div>
+                <div item-left>
+                  <span class="title">Social Media</span><br>
+                  <span class="description">Connect to your Business</span>
+                </div>
+                <div item-end>
+                    <ion-toggle mode="ios"></ion-toggle>
+                </div>
+              </ion-item>
+      </ion-list>
+</ion-content>

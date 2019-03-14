@@ -1,0 +1,46 @@
+page-upcoming-customers {
+    .toolbar-title{
+        text-align: center !important;
+        .title-btn{
+            background-color:transparent;
+            color:black;
+            ion-icon{
+                font-size:small;
+            }
+        }
+    }
+    h3{
+        margin-left:20px;
+        margin-bottom:60px !important;
+    }
+    .month{
+        margin-bottom: 20px !important;
+    }
+    ion-segment{
+        position: absolute;
+        bottom:30px;
+        width:90%;
+    }
+    ion-list{
+        
+        ion-item{
+            p{
+                font-size:large !important;
+                width:80%;
+            }
+            ion-label{
+                font-weight: bold;
+                text-align: left;
+                font-size:large !important;
+            }
+        }
+    }
+    .line{
+        height:1px;
+        color:black;
+        background-color:black;
+        bottom:90px;
+        width: 100%;
+        position: absolute;
+    }
+}

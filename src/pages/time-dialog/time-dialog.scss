@@ -1,0 +1,48 @@
+page-time-dialog {
+    width: 90% !important;
+    height: 60% !important;
+    left: 5% !important;
+    top:0 !important;
+    bottom: 0 !important;
+    margin:auto !important;
+    position: absolute !important;
+    ion-content{
+        .header{
+            button{
+                background-color:transparent;
+                float:right;
+                ion-icon{
+                    color:red;
+                }
+            }
+        }
+        .first{
+            margin-top:16px;
+            ion-input{
+                border: 1px solid #898989;
+                border-radius:10px;
+                padding-left:10px;
+            }
+        }
+        .second{
+            margin-top:40px;
+            text-align: center;
+            button{
+                background-color: transparent;
+                color:$blue-custom;
+                border-bottom: 1px solid $blue-custom;
+            }
+        }
+        .btn-row{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            margin-top:20px;
+            .btn{
+                width:60%;
+                padding:15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+page-plus-dialog {
+
+    width: 90% !important;
+    height: 60% !important;
+    left: 5% !important;
+    top:0 !important;
+    bottom: 0 !important;
+    margin:auto !important;
+    position: absolute !important;
+    .title{
+        background-color:#0054a6;
+        color:white;
+        font-size:180%;
+        text-align:center;
+        padding:40px;
+        display: flex;
+        justify-content: center;
+        ion-icon{
+            font-size:small;
+        }
+    }
+    .content-row{
+        .active{
+            border: 1px solid $blue-custom;
+            button{
+                background-color:$blue-custom;
+                color:white;
+                font-size:60%;
+                width:90%;
+                margin-top:-140px;
+                display:block;
+            }
+            .price{
+                color:$orange-custom;
+            }
+            .save{
+                color:$blue-custom;
+                font-size:70%;
+                margin-bottom:5px;
+            }
+        }
+        ion-col{
+            height:130px;
+            padding-top:10px;
+            padding-bottom:10px;
+            div{
+                width:100%;
+                text-align: center;
+            }
+            button{
+                display:none;
+            }
+            .header{
+                font-size:300%;
+                font-weight: bold;
+                margin-top:5px;
+
+                
+            }
+            .month{
+                color:#b7b7b7;
+                margin-bottom:5px;
+            }
+            .price{
+                color:#636363;
+            }
+        }
+
+    }
+    .button-row1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:20px;
+        .btn{
+            padding:25px;
+        }
+        .cancel-btn{
+            padding:25px;
+            background-color:transparent !important;
+            color:#878787;
+        }
+    }
+    .button-row2{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        .btn{
+            padding:25px;
+        }
+        .cancel-btn{
+            padding:25px;
+            background-color:transparent !important;
+            color:#878787;
+        }
+    }
+}

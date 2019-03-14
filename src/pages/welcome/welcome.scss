@@ -1,0 +1,30 @@
+page-welcome {
+    ion-content{
+        .content-div{
+            width:100%;
+            height:100%;
+            display:flex;
+            flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             text-align: center;       
+            .logo{
+                width:60px;
+                height:60px;
+                justify-content: center;
+                align-items: center;
+                margin-bottom:50px;
+                border-radius: 10px;
+            }
+            .btn{
+                width:80%;
+                height:60px;
+            }
+            .business-btn{
+                background-color:white;
+                border: 2px solid #3296fe;
+                color:#3296fe;
+            }
+        }
+    }
+}
